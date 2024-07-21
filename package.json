@@ -20,6 +20,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "start:gh-pages": "react-scripts start --public-url /api-github",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",

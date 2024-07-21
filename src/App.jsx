@@ -10,7 +10,7 @@ import { Theme } from "./styles/Theme";
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/api-github">
       <Theme>
         <AppRoutes />
         <GlobalStyle />

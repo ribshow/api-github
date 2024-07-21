@@ -43,7 +43,7 @@ export default function RepositoriesPage() {
       } catch (err) {
         setError(
           <Error>
-            <ReturnBack href="/">
+            <ReturnBack href="/api-github">
               <MdOutlineKeyboardReturn size={24} />
             </ReturnBack>
             <Msg>
@@ -82,7 +82,7 @@ export default function RepositoriesPage() {
       <Container>
         <Sidebar>
           <DivBack>
-            <Back href="/">
+            <Back href="/api-github">
               <MdOutlineKeyboardReturn size={30} />
             </Back>
           </DivBack>
