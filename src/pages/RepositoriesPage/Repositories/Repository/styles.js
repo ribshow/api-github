@@ -6,7 +6,7 @@ export const Container = styled.div`
   justify-content: space-between;
   background: rgba(0, 0, 0, 0.2);
   border-left: 3px solid
-    ${(props) => props.color || props.theme.colors.text};
+    ${(props) => props.color || props.theme.colors.gray500};
   padding: 1rem;
 
   @media screen and (max-width: ${(props) => props.theme.breakpoints.sm}) {
@@ -32,7 +32,7 @@ export const Footer = styled.footer`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  color: ${(props) => props.color || props.theme.colors.text};
+  color: ${(props) => props.color || props.theme.colors.gray500};
   font-size: ${(props) => props.theme.fontSize.base};
 `;
 
