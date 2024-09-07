@@ -5,12 +5,12 @@ import Repository from './Repository';
 
 import { Container } from './styles';
 
-export default function Repositories({ repositories, currentLanguage = undefined }) {
+export default function Repositories({ repositories, currentLanguage = null }) {
   const repos = repositories
   .filter((repository) =>
-     currentLanguage === undefined
-     ||
-     repository.language === currentLanguage
+    currentLanguage === null
+    ||
+    repository.language === currentLanguage
   )
   .map((repository) => (
     <Repository key={repository.id} repository={repository} />

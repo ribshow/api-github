@@ -31,7 +31,7 @@ export const getLangsFrom = (repositories) => {
     .sort((a, b) => b.count - a.count);
 
   // caso language venha como null ele não é exibido
-  delete stats.null;
+  // delete stats.null;
 
   return stats;
 };

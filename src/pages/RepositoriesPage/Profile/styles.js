@@ -65,6 +65,9 @@ export const Data = styled.p`
 `;
 
 export const Links = styled.a`
+  display: flex;
+  align-items: center;
+  width: 50%;
   color: ${(props) => props.theme.colors.text};
 
   &:hover {

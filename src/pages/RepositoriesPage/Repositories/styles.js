@@ -10,5 +10,6 @@ export const Container = styled.div`
 
   @media screen and (max-width: ${(props) => props.theme.breakpoints.md}) {
     grid-template-columns: auto;
+    padding: 20px;
   }
 `;

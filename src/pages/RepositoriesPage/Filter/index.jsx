@@ -3,8 +3,8 @@ import PropTypes from 'prop-types';
 
 import { Container, Selector, Cleaner } from './styles';
 
-export default function Filter({ languages, currentLanguage = null, onClick = null }) {
 
+export default function Filter({ languages, currentLanguage = null, onClick = null }) {
   const selectors = languages.map(( {name, count, color} ) => (
     <Selector
       key={name.toLowerCase()}
