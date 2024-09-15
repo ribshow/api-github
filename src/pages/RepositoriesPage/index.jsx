@@ -25,9 +25,6 @@ export default function RepositoriesPage() {
   // estado para o carregamento
   const [loading, setLoading] = useState(true);
 
-  // retorno em caso de erro
-  // const navigate = useNavigate();
-
   useEffect(() => {
     const loadData = async() => {
       try {
@@ -60,6 +57,7 @@ export default function RepositoriesPage() {
     loadData();
   }, [login]);
 
+  // se a api demorar para consultar ela retorna uma tela de carregamento
   if (loading) {
     return <Loading>Carregando...</Loading>;
   }

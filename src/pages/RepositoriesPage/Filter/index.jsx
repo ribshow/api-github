@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import { Container, Selector, Cleaner } from './styles';
+import { Container, Selector, Cleaner, DivButton } from './styles';
 
 
 export default function Filter({ languages, currentLanguage = null, onClick = null }) {
@@ -25,7 +25,9 @@ export default function Filter({ languages, currentLanguage = null, onClick = nu
   return (
     <Container>
       {selectors}
-      <Cleaner onClick={onClean}>Limpar</Cleaner>
+      <DivButton>
+        <Cleaner onClick={onClean}>Limpar</Cleaner>
+      </DivButton>
     </Container>
   )
 }

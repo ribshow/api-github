@@ -68,9 +68,11 @@ export const Links = styled.a`
   display: flex;
   align-items: center;
   width: 50%;
+  font-size: 0.75rem;
   color: ${(props) => props.theme.colors.text};
+  transition: color 0.25s;
 
   &:hover {
-    color: ${(props) => props.theme.colors.text};
+    color: ${(props) => props.theme.colors.yellow};
   }
 `;

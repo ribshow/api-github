@@ -96,6 +96,11 @@ export const Back = styled.a`
   padding: 1rem;
   text-decoration: none;
   color: ${(props) => props.theme.colors.text};
+  transition: color 0.25s;
+
+  &:hover{
+    color: ${(props) => props.theme.colors.yellow};
+  }
 
   @media screen and (max-width: ${(props) => props.theme.breakpoints.md} ) {
     position: relative;

@@ -45,6 +45,7 @@ export const Input = styled.input`
   }
 `;
 
+// esse button é renderizado como um link pela biblioteca react-router-dom
 export const Button = styled(Link)`
   display: flex;
   align-items: center;
@@ -61,4 +62,9 @@ export const Button = styled(Link)`
     color: ${(props) => props.theme.colors.primary};
     cursor: pointer;
   };
+`;
+
+// parágrafo para mensagem de erro
+export const ErrorMessage = styled.p`
+  color: ${(props) => props.theme.colors.text};
 `;

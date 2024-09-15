@@ -44,10 +44,17 @@ export const Lang = styled.span`
   padding: 5px;
 `;
 
+// Botão ver dos repositórios
 export const Link = styled.a`
   color: inherit;
   font-weight: bold;
   text-transform: uppercase;
   text-decoration: none;
   box-shadow: 1px 1px 1px 1px white;
+  transition: background-color 0.25s;
+  padding: 0.5rem;
+
+  &:hover{
+    background-color: ${(props) => props.theme.colors.text };
+  }
 `;

@@ -45,19 +45,30 @@ export const Selector = styled.div`
   }
 `;
 
+// botão clear
 export const Cleaner = styled.button`
   background: transparent;
   color: ${(props) => props.theme.colors.text};
   border: none;
   text-align: center;
   padding: 1rem;
+  transition: font-size 0.25s;
 
   &:hover {
     cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 2rem;
   }
 
   @media screen and (max-width: ${(props) => props.theme.breakpoints.md}) {
     position: relative;
     display: flex;
   }
+`;
+
+export const DivButton = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: center;
 `;
