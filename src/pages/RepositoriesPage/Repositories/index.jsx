@@ -7,14 +7,14 @@ import { Container } from './styles';
 
 export default function Repositories({ repositories, currentLanguage = null }) {
   const repos = repositories
-  .filter((repository) =>
-    currentLanguage === null
-    ||
-    repository.language === currentLanguage
-  )
-  .map((repository) => (
-    <Repository key={repository.id} repository={repository} />
-  ));
+    .filter((repository) =>
+      currentLanguage === null ||
+      repository.language === currentLanguage ||
+      (currentLanguage === 'null' && repository.language === null)
+    )
+    .map((repository) => (
+      <Repository key={repository.id} repository={repository} />
+    ));
   return (
     <Container>{repos}</Container>
   )

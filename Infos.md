@@ -12,3 +12,13 @@
 **styled components**
 
 - Os componentes devem iniciar obrigatóriamente por letra maíuscula
+
+**Deploy**
+
+- O deploy foi feito usando a biblioteca gh-pages
+- Instalação foi feita usando
+  npm install gh-pages --save-dev
+- Em seguida usei para preparar o deploy da aplicação
+  npm run build
+- Por útlimo o deploy
+  npm run deploy
